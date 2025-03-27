@@ -7,6 +7,8 @@
   justify-content: space-between;
   padding: 2rem;
   text-align: center;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Ensure main content takes up all available space */
@@ -21,4 +23,6 @@ main {
 /* Apply Magic Wand Cursor to the Whole Website */
 body {
   cursor: url('/cursor.cur'), auto; /* Adjust the path if needed */
+  overflow-x: hidden;
+  width: 100%;
 }
