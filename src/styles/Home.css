@@ -123,3 +123,33 @@
   box-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900; /* Enhanced glow */
   transform: scale(1.05);
 }
+
+/* Responsive Home Section */
+@media screen and (max-width: 768px) {
+  .home {
+    height: 100vh;
+    padding: 10px;
+  }
+
+  .home h1 {
+    font-size: 50px; /* Reduce font size */
+  }
+
+  .home h6 {
+    font-size: 18px; /* Smaller subtitle */
+  }
+
+  .magic-button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .side-nav {
+    left: 5px; /* Adjust for small screens */
+    padding: 10px;
+  }
+
+  .side-nav ul li a {
+    font-size: 14px; /* Smaller text */
+  }
+}
