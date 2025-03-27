@@ -5,12 +5,12 @@ const events = [
   { 
     title: 'Blockchain and Web3 ⛓️‍💥', 
     description: 'Develop a decentralized magic ledger to store spells securely on the blockchain and prevent Dark Wizards from tampering with history!', 
-    image: "/events/hat.jpg" 
+    image: "./src/assets/events/hat.jpg" 
   },
   { 
     title: 'AI & Machine Learning 🏆', 
     description: 'Build an AI-powered spell recommendation system that predicts the best spell for duels based on past wizard battles!', 
-    image: "/aiml.jpeg"  
+    image: "./src/assets/events/aiml.jpeg"  
   },
   { 
     title: 'Sustainability & Climate🗺️', 
