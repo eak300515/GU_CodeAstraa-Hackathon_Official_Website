@@ -59,10 +59,66 @@
 /* Hamburger Menu */
 .hamburger {
   display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 110;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: gold;
+  transition: 0.3s;
 }
 
 @media (max-width: 1024px) {
   .hamburger {
-    display: flex;
+    display: flex; /* Visible only on mobile */
+  }
+
+  .logo-container {
+    display: none; /* Hide logos on mobile */
+  }
+}
+
+/* Mobile Navigation */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 10px;
+}
+
+.mobile-nav.open {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav a {
+  color: gold;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  font-family: "HarryP";
+  transition: 0.3s;
+}
+
+.mobile-nav a:hover {
+  color: #ff4500;
+  text-shadow: 0 0 10px gold;
+}
+
+/* Fix Logos on Mobile */
+@media (max-width: 1024px) {
+  .magic-logo {
+    height: 35px; /* Reduce logo size on mobile */
   }
 }

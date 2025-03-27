@@ -23,7 +23,7 @@ const Header = () => {
           <img src={AstraaLogo} alt="Code Astraa" />
         </a>
 
-        {/* Logos Section */}
+        {/* Logos Section - Hidden on Mobile */}
         <div className="logo-container">
           <img src={Logo1} alt="Logo 1" className="magic-logo" />
           <img src={Logo2} alt="Logo 2" className="magic-logo" />
@@ -33,13 +33,21 @@ const Header = () => {
           <img src={Logo6} alt="Logo 6" className="magic-logo" />
         </div>
 
-        {/* Hamburger Menu */}
+        {/* Hamburger Menu - Only for Mobile */}
         <button className="hamburger" onClick={toggleNavigation}>
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
+
+      {/* Mobile Navigation Menu */}
+      <nav className={`mobile-nav ${openNavigation ? "open" : ""}`}>
+        <a href="#Schedule">Schedule</a>
+        <a href="#knowus">Know Us</a>
+        <a href="#spells">Spells</a>
+        <a href="#Prizing">Prizing</a>
+      </nav>
     </header>
   );
 };
