@@ -1,0 +1,68 @@
+/* Header Styling */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background: rgba(255, 215, 0, 0.1); /* Gold tint */
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.1);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  cursor: url("/cursor.cur"), pointer; /* Harry's wand */
+}
+
+/* Logo Styling */
+.logo img {
+  height: 60px;
+  transition: transform 0.3s ease-in-out;
+  cursor: url("/cursor.cur"), pointer; /* Harry's wand */
+}
+
+.logo img:hover {
+  transform: scale(1.1) rotate(10Deg);
+  cursor: url("/sparkle-cursor.cur"), pointer;
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  gap: 20px;
+}
+
+.magic-logo {
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+  cursor: url("/cursor.cur"), pointer; /* Harry's wand */
+}
+
+.magic-logo:hover {
+  transform: scale(1.1) rotate(5Deg);
+  filter: drop-shadow(0 0 10px gold);
+  cursor: url("/sparkle-cursor.cur"), pointer;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .hamburger {
+    display: flex;
+  }
+}

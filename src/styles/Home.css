@@ -1,0 +1,125 @@
+/* Fullscreen Hero Section */
+.home {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Background Video */
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Left-Side Navigation */
+.side-nav {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  z-index: 1000;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+.side-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-nav ul li {
+  margin-bottom: 10px;
+}
+
+.side-nav ul li a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "HarryP";
+  cursor: url("/cursor.cur"), pointer; /* Harry's wand */
+  transition: color 0.3s ease-in-out;
+}
+
+.side-nav ul li a:hover {
+  color: #ff4500;
+  cursor: url("/sparkle-cursor.cur"), pointer; /* Sparkling Wand Cursor */
+  text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
+}
+
+/* Hero Title */
+/* Reduce space between h1 and h6 */
+.home h1 {
+  font-size: 100px;
+  font-family: "HarryP";
+  color: #ffd700;
+  text-shadow: 2px 2px 10px #000;
+  margin-bottom: 10px; /* Reduce space below h1 */
+}
+
+/* Reduce space between h6 elements */
+.home h6 {
+  font-size: 30px;
+  font-family: "HarryP";
+  color: #ffd700;
+  text-shadow: 2px 2px 10px #000;
+  margin-top: 0px;  /* Remove top margin */
+  margin-bottom: 5px; /* Reduce spacing between h6 elements */
+}
+
+/* Magic Button */
+.magic-button {
+  background: transparent;
+  border: 2px solid gold;
+  padding: 15px 30px;
+  font-size: 20px;
+  font-family: "HarryP";
+  cursor: url("/cursor.cur"), pointer; /* Harry's wand */
+  color: gold;
+  transition: 0.3s ease-in-out;
+}
+
+.magic-button:hover {
+  background: gold;
+  color: black;
+  box-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900;
+  cursor: url("/sparkle-cursor.cur"), pointer; /* Sparkling Wand Cursor */
+  transform: scale(1.05);
+}
+
+.sound-toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffd700;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: "HarryP";
+  cursor: url("/sparkle-cursor.cur"), pointer; /* Sparkling Wand Cursor */
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.sound-toggle:hover {
+  background: gold;
+  color: black;
+  cursor: url("/sparkle-cursor.cur"), pointer; /* Sparkling Wand Cursor */
+  box-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900; /* Enhanced glow */
+  transform: scale(1.05);
+}

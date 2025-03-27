@@ -1,0 +1,24 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Ensure main content takes up all available space */
+main {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Apply Magic Wand Cursor to the Whole Website */
+body {
+  cursor: url('/cursor.cur'), auto; /* Adjust the path if needed */
+}

@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Corrected Font Import */
+@font-face {
+  font-family: "HarryP";
+  src: url("../src/fonts/HarryP-MVZ6w.ttf") format("truetype");
+}
+
+/* Global Styling */
+body {
+  @apply bg-darkMagic text-parchment;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  cursor: url('/cursor.cur'), auto; /* Harry's wand */ 
+}
+
+/* Magic Glow Effect */
+.magic-glow {
+  text-shadow: 0 0 15px #ffcc00, 0 0 30px #ff9900;
+}
+
+/* Button Styling */
+.magic-btn {
+  @apply bg-yellow-500 text-black px-6 py-3 rounded-lg text-lg font-bold transition duration-300 relative;
+  cursor: url('/cursor.cur'), pointer; /* Harry's wand */ 
+}
+
+/* Change Cursor to Sparkling Version on Hover */
+.magic-btn:hover {
+  cursor: url('/sparkle-cursor.cur'), pointer; /* Sparkling Wand Cursor */
+  box-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900; /* Enhanced glow */
+  transform: scale(1.05);
+}
+
+/* Sparkling Effect */
+.magic-btn:hover::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: radial-gradient(circle, #ffcc00 30%, transparent 70%);
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  animation: sparkle 0.5s infinite alternate;
+  pointer-events: none; /* Ensures the sparkle doesn’t interfere with clicking */
+}
+
+/* Sparkle Animation */
+@keyframes sparkle {
+  from {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background: #4b0082;
+  color: gold;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+}
