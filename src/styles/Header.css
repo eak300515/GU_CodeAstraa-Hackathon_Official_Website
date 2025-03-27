@@ -92,7 +92,9 @@
   top: 100%;
   right: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 215, 0, 0.1); /* Gold tint */
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 215, 0, 0.1);
   text-align: center;
   padding: 10px;
 }
