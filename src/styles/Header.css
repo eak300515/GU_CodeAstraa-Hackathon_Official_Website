@@ -81,12 +81,12 @@
   }
 
   .logo-container {
-    display: none; /* Hide logos on mobile */
+    display: none; /* Hide logos on mobile by default */
   }
 }
 
-/* Mobile Navigation */
-.mobile-nav {
+/* Mobile Logo Menu */
+.mobile-logo-menu {
   display: none;
   position: absolute;
   top: 100%;
@@ -97,28 +97,13 @@
   padding: 10px;
 }
 
-.mobile-nav.open {
+.mobile-logo-menu.open {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
 }
 
-.mobile-nav a {
-  color: gold;
-  text-decoration: none;
-  padding: 10px;
-  font-size: 18px;
-  font-family: "HarryP";
-  transition: 0.3s;
-}
-
-.mobile-nav a:hover {
-  color: #ff4500;
-  text-shadow: 0 0 10px gold;
-}
-
-/* Fix Logos on Mobile */
-@media (max-width: 1024px) {
-  .magic-logo {
-    height: 35px; /* Reduce logo size on mobile */
-  }
+.mobile-logo-menu img {
+  height: 40px;
 }
