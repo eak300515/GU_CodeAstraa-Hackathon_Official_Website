@@ -1,12 +1,33 @@
-# React + Vite
+# ✨ CodeAstraa - Hackardium Leviosa 🪄  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **CodeAstraa**, a **Harry Potter-themed** hackathon event! This repository contains the codebase for the official website, built with **React (Vite)** and designed to bring the **magic of coding** to life.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features  
+✅ **Magical UI** – Inspired by the wizarding world 🏰  
+✅ **Responsive Design** – Works on all devices 📱💻  
+✅ **Dynamic Animations** – Powered by Framer Motion ✨  
+✅ **Video Background** – Hogwarts ambiance in the home section 🎥  
+✅ **Smooth Navigation** – Interactive menu & sections 📜  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack  
+- **Frontend**: React.js (Vite), Framer Motion  
+- **Styling**: CSS, Custom Fonts, Animations  
+- **Version Control**: Git & GitHub  
+
+---
+
+## 📂 Project Structure  
+
+
+Codeastraa/ │── src/ │ ├── assets/ # Images, videos, and logos
+│ ├── components/ # Reusable components (Header, Home, etc.)
+│ ├── styles/ # CSS files for styling
+│ ├── App.jsx # Main React component
+│ ├── main.jsx # Entry point for React app
+│── .gitignore # Ignored files (node_modules, logs, etc.)
+│── package.json # Dependencies and scripts
+│── README.md # Project documentation
