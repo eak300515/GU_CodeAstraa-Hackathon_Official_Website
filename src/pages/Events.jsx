@@ -5,7 +5,7 @@ const events = [
   { 
     title: 'Blockchain and Web3 ⛓️‍💥', 
     description: 'Develop a decentralized magic ledger to store spells securely on the blockchain and prevent Dark Wizards from tampering with history!', 
-    image: "./src/assets/events/hat.jpg" 
+    image: "/events/hat.jpg" 
   },
   { 
     title: 'AI & Machine Learning 🏆', 
