@@ -10,7 +10,7 @@ const events = [
   { 
     title: 'AI & Machine Learning 🏆', 
     description: 'Build an AI-powered spell recommendation system that predicts the best spell for duels based on past wizard battles!', 
-    image: "./src/assets/events/aiml.jpeg"  
+    image: "/aiml.jpeg"  
   },
   { 
     title: 'Sustainability & Climate🗺️', 
