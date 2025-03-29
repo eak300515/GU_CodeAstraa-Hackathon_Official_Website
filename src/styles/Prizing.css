@@ -54,9 +54,9 @@
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(5px);
     text-align: center;
-    color: goldenrod;
+    color: #DAA520;
     font-size: 1.2rem;
-    font-family: "Pirata One", system-ui;
+    font-family: "Henny Penny", system-ui;
     font-weight: 400;
     font-style: normal;
     position: relative;
@@ -67,10 +67,10 @@
   
   /* Apply Poppins font to the prize descriptions */
   .prize-card p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
     font-size: 1rem;
-    color: black;
+    color: #5D3FD3;
   }
   
   /* Animate cards sequentially */
