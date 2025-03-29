@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Events from "./pages/Events";
+import Schedule from "./pages/Schedule";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
     <div id="spells">
     <Events />
     </div>
+
+    <Schedule/>
     
     <Footer />
    </div>
