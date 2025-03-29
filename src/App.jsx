@@ -20,7 +20,10 @@ function App() {
     <Schedule/>
     </div>
     
+    <div id="Prizing">
     <Prizing />
+    </div>
+    
     <Footer />
    </div>
    </>
