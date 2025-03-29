@@ -15,7 +15,9 @@ function App() {
     <Events />
     </div>
 
+    <div id="Schedule">
     <Schedule/>
+    </div>
     
     <Footer />
    </div>
