@@ -9,7 +9,7 @@
     justify-content: center;
     overflow: hidden;
     text-align: center;
-    color: white;
+    background-image: url('/hogwarts-background.jpg');
   }
   
   /* Glowing Logo */
