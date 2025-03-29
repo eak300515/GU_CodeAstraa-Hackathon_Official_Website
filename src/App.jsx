@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Events from "./pages/Events";
 import Schedule from "./pages/Schedule";
 import Prizing from "./pages/Prizing";
+import KnowUs from "./pages/KnowUs";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
     <div id="Prizing">
     <Prizing />
     </div>
+
+
+    <KnowUs />
     
     <Footer />
    </div>
