@@ -118,6 +118,7 @@
   .prize-card:hover {
     transform: scale(1.05);
     box-shadow: 0 12px 40px rgba(255, 223, 0, 0.8);
+    cursor: url("/sparkle-cursor.cur"), pointer;
   }
   
   /* Responsive */
