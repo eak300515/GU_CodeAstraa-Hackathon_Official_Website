@@ -57,6 +57,7 @@
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+    font-family: "HarryP";
     position: relative;
     opacity: 0;
     transform: translateY(30px);
@@ -85,7 +86,7 @@
 .prize-card.first { border: 2px solid gold; }
 .prize-card.second { border: 2px solid silver; }
 .prize-card.third { border: 2px solid #cd7f32; }
-.prize-card.special { border: 2px solid #ffcc00; }
+.prize-card.special { border: 2px solid #a600ff; }
 
 /* Hover Effect */
 .prize-card:hover {
