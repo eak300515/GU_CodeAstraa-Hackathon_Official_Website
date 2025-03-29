@@ -15,15 +15,19 @@ const KnowUs = () => {
         transition={{ duration: 1 }}
       />
 
-      {/* Main Text Section */}
-      <motion.h1
-        className="knowus-title"
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.2 }}
-      >
-        CODE ASTRAA: <span> SPELL. CODE. CONQUER. </span>
-      </motion.h1>
+     {/* Main Text Section */}
+<motion.h1
+  className="knowus-title"
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1.2 }}
+>
+  CODE ASTRAA: 
+  <span className="spell"> SPELL.</span> 
+  <span className="code"> CODE.</span> 
+  <span className="conquer"> CONQUER.</span>
+</motion.h1>
+
 
       {/* Glassmorphism Card */}
       <motion.div

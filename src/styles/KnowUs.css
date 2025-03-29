@@ -34,7 +34,20 @@
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-    color: #ffcc00; /* Updated to your given color */
+    color: #ffcc00; /* General title color */
+}
+
+/* Colored Words */
+.knowus-title .spell {
+    color: #FFA500; /* Orange */
+}
+
+.knowus-title .code {
+    color: #00FF7F; /* Green */
+}
+
+.knowus-title .conquer {
+    color: #1E90FF; /* Blue */
 }
 
 /* Glassmorphism Card */
