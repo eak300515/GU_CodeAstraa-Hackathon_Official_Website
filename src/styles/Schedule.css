@@ -16,44 +16,48 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/hogwarts-background.jpg') no-repeat center center/cover;
+    background: url("../assets/hackathon-bg.jpg") no-repeat center center/cover;
     filter: blur(10px); /* Background is blurred */
     z-index: -1;
 }
 
-/* Magical Schedule Container */
+/* Magical Schedule Container - Full Screen on Laptop */
 .schedule-container {
-    background: linear-gradient(to right, #3c1053, #1c0522); /* Keep it as it was */
-    padding: 30px;
+    background: linear-gradient(to right, #3c1053, #1c0522);
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 223, 0, 0.7);
-    max-width: 800px;
-    width: 90%;
+    width: 80%; /* Covers most of the screen */
+    max-width: 1200px; /* Limits max width for readability */
+    min-height: 90vh; /* Takes up almost full screen */
     text-align: center;
     color: white;
     position: relative;
-    z-index: 2; /* Ensures it appears above the blurred background */
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Title with Glow Effect */
 .schedule-title {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
     color: #ffd700;
     text-shadow: 0 0 10px #ffd700, 0 0 20px #ffdb58;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 /* Schedule Content */
 .schedule-content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
 }
 
 /* Each Round Card */
 .schedule-card {
-    background: rgba(0, 0, 0, 0.6); /* Dark translucent card */
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #ffd700;
@@ -81,7 +85,7 @@
 
 /* Round Titles */
 .schedule-round {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #ffcc00;
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
@@ -95,11 +99,32 @@
 
 .schedule-item {
     color: #ddd;
-    font-size: 15px;
+    font-size: 16px;
     transition: color 0.3s;
 }
 
 .schedule-item:hover {
     color: #ffd700;
     cursor: pointer;
+}
+
+/* 🔥 Responsive for Mobile */
+@media (max-width: 768px) {
+    .schedule-container {
+        width: 95%; /* Use almost full width on mobile */
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .schedule-title {
+        font-size: 24px;
+    }
+
+    .schedule-round {
+        font-size: 18px;
+    }
+
+    .schedule-item {
+        font-size: 14px;
+    }
 }
