@@ -1,5 +1,5 @@
 import "./../styles/Prizing.css";
-import prizeVideo from "../assets/prize-bg.mp4"; 
+import prizeVideo from "../assets/prize-bg.mp4"; // Add a relevant video
 
 const Prizing = () => {
   return (
@@ -9,7 +9,7 @@ const Prizing = () => {
         <source src={prizeVideo} type="video/mp4" />
       </video>
 
-      {/* Glassmorphic Prizing Container */}
+      {/* Prizing Cards Container */}
       <div className="prizing-container">
         <h2 className="prizing-title">🏆 Prize & Rewards (Total ₹1,00,000)</h2>
 

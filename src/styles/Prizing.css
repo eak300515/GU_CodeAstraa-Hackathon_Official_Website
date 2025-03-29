@@ -20,13 +20,8 @@
     z-index: -1;
 }
 
-/* Glassmorphic Container */
+/* Prizing Container */
 .prizing-container {
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     text-align: center;
     color: white;
     width: 85%;
@@ -57,12 +52,33 @@
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
     text-align: center;
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+    position: relative;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+/* Animate cards sequentially */
+.prize-card:nth-child(1) { animation-delay: 0.2s; }
+.prize-card:nth-child(2) { animation-delay: 0.4s; }
+.prize-card:nth-child(3) { animation-delay: 0.6s; }
+.prize-card:nth-child(4) { animation-delay: 0.8s; }
+
+/* Keyframes for Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Winner, Runner-up & Third Place Colors */
@@ -71,8 +87,9 @@
 .prize-card.third { border: 2px solid #cd7f32; }
 .prize-card.special { border: 2px solid #ffcc00; }
 
+/* Hover Effect */
 .prize-card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 12px 40px rgba(255, 223, 0, 0.8);
 }
 
