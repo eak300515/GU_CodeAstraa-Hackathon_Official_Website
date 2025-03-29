@@ -36,7 +36,7 @@ const Home = () => {
         initial={{ opacity: 0, y: -50 }} 
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}>
-        CODE <span></span>ASTRAA
+        CODE   ASTRAA !
       </motion.h1>
 
       <motion.h6 
