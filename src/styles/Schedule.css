@@ -99,6 +99,8 @@
 /* Round Titles */
 .schedule-round {
     font-size: 22px;
+    font-family: "HarryP"; /* Using Harry Potter font */
+    src: url("../src/fonts/HarryP-MVZ6w.ttf") format("truetype");
     font-weight: bold;
     color: #ffcc00;
     text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
