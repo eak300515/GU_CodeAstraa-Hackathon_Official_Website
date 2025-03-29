@@ -1,4 +1,4 @@
-/* Wrapper for Background */
+/* Background styling - Same as Events */
 .schedule-wrapper {
     position: relative;
     display: flex;
@@ -7,29 +7,34 @@
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    background-image: url('/hogwarts-background.jpg'); /* Same as Events */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-/* Blurred Background */
+/* Blurred Background - Behind the Schedule Container */
 .schedule-bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: url("../assets/hackathon-bg.jpg") no-repeat center center/cover;
-    filter: blur(10px); /* Background is blurred */
+    filter: blur(10px); /* Background blur */
     z-index: -1;
 }
 
-/* Magical Schedule Container - Full Screen on Laptop */
+/* Magical Schedule Container - Glassmorphism */
 .schedule-container {
-    background: linear-gradient(to right, #3c1053, #1c0522);
-    padding: 10px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(255, 223, 0, 0.7);
-    width: 80%; /* Covers most of the screen */
-    max-width: 1200px; /* Limits max width for readability */
-    min-height: 90vh; /* Takes up almost full screen */
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.4); /* Same as Events */
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    width: 85%;
+    max-width: 1200px;
+    min-height: 90vh;
     text-align: center;
     color: white;
     position: relative;
@@ -39,13 +44,16 @@
     justify-content: center;
 }
 
-/* Title with Glow Effect */
+/* ✨ Title Styling - Same as Events */
 .schedule-title {
-    font-size: 32px;
+    font-size: 3rem;
+    font-family: "HarryP"; /* Using Harry Potter font */
+    src: url("../src/fonts/HarryP-MVZ6w.ttf") format("truetype");
     font-weight: bold;
-    color: #ffd700;
-    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffdb58;
-    margin-bottom: 30px;
+    color: white;
+    text-shadow: 0 0 30px rgba(190, 196, 7, 0.8);
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 /* Schedule Content */
@@ -55,19 +63,24 @@
     gap: 25px;
 }
 
-/* Each Round Card */
+/* Each Round Card - Glass Effect */
 .schedule-card {
-    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
     padding: 20px;
-    border-radius: 12px;
-    border: 1px solid #ffd700;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover Effect - Same as Events */
 .schedule-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(199, 21, 196, 0.6);
+    cursor: url('/sparkle-cursor.cur'), pointer; /* Sparkling Wand Cursor */
 }
 
 /* Round Header */
@@ -108,16 +121,16 @@
     cursor: pointer;
 }
 
-/* 🔥 Responsive for Mobile */
+/* ✨ Responsive Design */
 @media (max-width: 768px) {
     .schedule-container {
-        width: 95%; /* Use almost full width on mobile */
+        width: 95%;
         min-height: auto;
         padding: 20px;
     }
 
     .schedule-title {
-        font-size: 24px;
+        font-size: 2.5rem;
     }
 
     .schedule-round {
