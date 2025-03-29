@@ -10,40 +10,35 @@
     overflow: hidden;
     text-align: center;
     background-image: url('/hogwarts-background.jpg');
-  }
-  
-  /* Glowing Logo */
-  .knowus-logo {
+}
+
+/* Glowing Logo */
+.knowus-logo {
     width: 150px;
     margin-bottom: 20px;
     filter: drop-shadow(0 0 20px gold);
     animation: floatAnimation 3s ease-in-out infinite;
-  }
-  
-  /* Floating Effect */
-  @keyframes floatAnimation {
+}
+
+/* Floating Effect */
+@keyframes floatAnimation {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
     100% { transform: translateY(0px); }
-  }
-  
-  /* Magical Title */
-  .knowus-title {
+}
+
+/* Magical Title */
+.knowus-title {
     font-size: 2.8rem;
+    font-family: "HarryP", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-  }
-  
-  /* Gradient Effect */
-  .knowus-title span {
-    background: linear-gradient(90deg, #5D3FD3, #DAA520);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-  
-  /* Glassmorphism Card */
-  .knowus-card {
+    color: #ffcc00; /* Updated to your given color */
+}
+
+/* Glassmorphism Card */
+.knowus-card {
     margin-top: 20px;
     padding: 20px;
     width: 80%;
@@ -52,23 +47,25 @@
     backdrop-filter: blur(10px);
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  }
-  
-  .knowus-card ul {
+}
+
+/* Event Highlights List */
+.knowus-card ul {
     list-style: none;
     padding: 0;
     font-size: 18px;
     font-weight: bold;
-  }
-  
-  .knowus-card li {
+}
+
+.knowus-card li {
     margin: 10px 0;
     color: #ffdb58;
-  }
-  
-  /* Benefits Section */
-  .knowus-benefits {
-    margin-top: 20px;
+}
+
+/* Benefits Section */
+.knowus-benefits {
+    margin-top: 50px;  /* Increased space above it */
+    margin-bottom: 40px;  /* Lifted it from below section */
     padding: 20px;
     width: 80%;
     max-width: 600px;
@@ -76,31 +73,31 @@
     backdrop-filter: blur(10px);
     border-radius: 12px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  }
-  
-  .knowus-benefits h2 {
-    color: gold;
-  }
-  
-  .knowus-benefits ul {
+}
+
+.knowus-benefits h2 {
+    color: #ffcc00; /* Also updated here */
+    font-family: "HarryP", sans-serif;
+}
+
+.knowus-benefits ul {
     list-style: none;
     padding: 0;
-  }
-  
-  .knowus-benefits li {
+}
+
+.knowus-benefits li {
     margin: 10px 0;
     font-size: 16px;
     color: #ddd;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .knowus-title {
-      font-size: 2.2rem;
+        font-size: 2.2rem;
     }
-  
+
     .knowus-card, .knowus-benefits {
-      width: 90%;
+        width: 90%;
     }
-  }
-  
+}
