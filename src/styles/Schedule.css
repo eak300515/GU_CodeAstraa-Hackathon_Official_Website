@@ -24,7 +24,7 @@
 /* Magical Schedule Container - Full Screen on Laptop */
 .schedule-container {
     background: linear-gradient(to right, #3c1053, #1c0522);
-    padding: 40px;
+    padding: 10px;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(255, 223, 0, 0.7);
     width: 80%; /* Covers most of the screen */
