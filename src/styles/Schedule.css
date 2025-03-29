@@ -14,22 +14,22 @@
     background-position: center;
 }
 
-/* Blurred Background - Behind the Schedule Container */
+/* Blurred Background */
 .schedule-bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    filter: blur(10px); /* Background blur */
+    filter: blur(10px);
     z-index: -1;
 }
 
-/* Magical Schedule Container - Glassmorphism */
+/* Magical Schedule Container */
 .schedule-container {
     border-radius: 15px;
     backdrop-filter: blur(12px);
-    background: rgba(0, 0, 0, 0.4); /* Same as Events */
+    background: rgba(0, 0, 0, 0.4);
     padding: 2rem;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
     width: 85%;
@@ -47,7 +47,7 @@
 /* ✨ Title Styling - Same as Events */
 .schedule-title {
     font-size: 3rem;
-    font-family: "HarryP"; /* Using Harry Potter font */
+    font-family: "HarryP";
     src: url("../src/fonts/HarryP-MVZ6w.ttf") format("truetype");
     font-weight: bold;
     color: white;
@@ -56,31 +56,71 @@
     text-align: center;
 }
 
-/* Schedule Content */
+/* Roadmap Styling */
 .schedule-content {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    align-items: center;
+    gap: 40px;
+    position: relative;
 }
 
-/* Each Round Card - Glass Effect */
+/* Glowing Connector Line */
+.schedule-content::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #ffd700, rgba(255, 215, 0, 0.2));
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* Each Round Card */
 .schedule-card {
     position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    width: 60%;
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1;
 }
 
-/* Hover Effect - Same as Events */
+/* Left & Right Alignment */
+.schedule-card:nth-child(odd) {
+    align-self: flex-start;
+    transform: translateX(-10%);
+}
+
+.schedule-card:nth-child(even) {
+    align-self: flex-end;
+    transform: translateX(10%);
+}
+
+/* Connector Dot */
+.schedule-card::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(circle, #ffd700, #ffcc00);
+    border-radius: 50%;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 10px rgba(255, 223, 0, 1);
+}
+
+/* Hover Effect */
 .schedule-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 40px rgba(199, 21, 196, 0.6);
-    cursor: url('/sparkle-cursor.cur'), pointer; /* Sparkling Wand Cursor */
+    cursor: url('/sparkle-cursor.cur'), pointer;
 }
 
 /* Round Header */
@@ -99,11 +139,8 @@
 /* Round Titles */
 .schedule-round {
     font-size: 22px;
-    font-family: "Pirata One", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: bold;
     color: #ffcc00;
-    
 }
 
 /* List Details */
@@ -120,7 +157,7 @@
 
 .schedule-item:hover {
     color: #ffd700;
-    cursor: pointer;
+    cursor: url('/sparkle-cursor.cur'), pointer;
 }
 
 /* ✨ Responsive Design */
@@ -141,5 +178,12 @@
 
     .schedule-item {
         font-size: 14px;
+    }
+
+    /* Make roadmap cards full width on mobile */
+    .schedule-card {
+        width: 90%;
+        align-self: center;
+        transform: none !important;
     }
 }
