@@ -33,20 +33,20 @@
     font-family: "HarryP", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffcc00; /* General title color */
+    color: #FAC826; /* General title color */
 }
 
 /* Colored Words */
 .knowus-title .spell {
-    color: #f88605; /* Orange */
+    color: #BE1E2D; /* Orange */
 }
 
 .knowus-title .code {
-    color: #05720e; /* Green */
+    color: #006838; /* Green */
 }
 
 .knowus-title .conquer {
-    color: #054686; /* Blue */
+    color: #0062A9; /* Blue */
 }
 
 /* Glassmorphism Card */
