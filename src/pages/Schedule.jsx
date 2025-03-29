@@ -34,35 +34,35 @@ const scheduleData = [
 ];
 
 const Schedule = () => {
-  const [showMagic, setShowMagic] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => setShowMagic(true), 500);
-  }, []);
-
   return (
-    <div className={`schedule-container ${showMagic ? "glow" : ""}`}>
-      <h2 className="schedule-title">🏰 The Magical Hackathon Schedule ✨</h2>
-      <div className="schedule-content">
-        {scheduleData.map((round, index) => (
-          <motion.div
-            key={index}
-            className="schedule-card"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: index * 0.3 }}
-          >
-            <div className="schedule-header">
-              <span className="icon">{round.icon}</span>
-              <h3 className="schedule-round">{round.title}</h3>
-            </div>
-            <ul className="schedule-details">
-              {round.details.map((detail, i) => (
-                <li key={i} className="schedule-item">{detail}</li>
-              ))}
-            </ul>
-          </motion.div>
-        ))}
+    <div className="schedule-wrapper">
+      {/* Blurred Background */}
+      <div className="schedule-bg"></div>
+
+      <div className="schedule-container">
+        <h2 className="schedule-title">🏰 The Magical Hackathon Schedule ✨</h2>
+        <div className="schedule-content">
+          {scheduleData.map((round, index) => (
+            <motion.div
+              key={index}
+              className="schedule-card"
+              initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="schedule-header">
+                <span className="icon">{round.icon}</span>
+                <h3 className="schedule-round">{round.title}</h3>
+              </div>
+              <ul className="schedule-details">
+                {round.details.map((detail, i) => (
+                  <li key={i} className="schedule-item">{detail}</li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

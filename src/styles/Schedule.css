@@ -1,96 +1,103 @@
-/* Magical Background */
+/* Wrapper for Background */
+.schedule-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Blurred Background */
+.schedule-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/hogwarts-background.jpg') no-repeat center center/cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* Magical Schedule Container */
 .schedule-container {
-    background: linear-gradient(to right, #3c1053, #1c0522);
-    padding: 20px;
+    background: rgba(32, 16, 64, 0.8);
+    padding: 30px;
     border-radius: 12px;
     box-shadow: 0 0 15px rgba(255, 223, 0, 0.5);
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 700px;
     text-align: center;
     color: white;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  /* Title with Glow Effect */
-  .schedule-title {
-    font-size: 24px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Title with Glow Effect */
+.schedule-title {
+    font-size: 26px;
     font-weight: bold;
     color: #ffd700;
     text-shadow: 0 0 10px #ffd700, 0 0 20px #ffdb58;
     margin-bottom: 20px;
-  }
-  
-  /* Schedule Content */
-  .schedule-content {
+}
+
+/* Schedule Content */
+.schedule-content {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-  }
-  
-  /* Each Round Card */
-  .schedule-card {
-    background: rgba(0, 0, 0, 0.3);
-    padding: 15px;
-    border-radius: 10px;
+    gap: 20px;
+}
+
+/* Each Round Card */
+.schedule-card {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 12px;
     border: 1px solid #ffd700;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .schedule-card:hover {
+}
+
+.schedule-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
-  }
-  
-  /* Round Header */
-  .schedule-header {
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+}
+
+/* Round Header */
+.schedule-header {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .icon {
+    margin-bottom: 12px;
+}
+
+.icon {
     color: #ffdb58;
-  }
-  
-  /* Round Titles */
-  .schedule-round {
-    font-size: 18px;
+}
+
+/* Round Titles */
+.schedule-round {
+    font-size: 20px;
     font-weight: bold;
     color: #ffcc00;
-    text-shadow: 0 0 8px rgba(255, 255, 0, 0.8);
-  }
-  
-  /* List Details */
-  .schedule-details {
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.8);
+}
+
+/* List Details */
+.schedule-details {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .schedule-item {
+}
+
+.schedule-item {
     color: #ddd;
-    font-size: 14px;
+    font-size: 15px;
     transition: color 0.3s;
-  }
-  
-  .schedule-item:hover {
+}
+
+.schedule-item:hover {
     color: #ffd700;
     cursor: pointer;
-  }
-  
-  /* Glow Effect when Activated */
-  .glow {
-    animation: glowAnimation 2s infinite alternate;
-  }
-  
-  @keyframes glowAnimation {
-    0% {
-      box-shadow: 0 0 10px rgba(255, 223, 0, 0.5);
-    }
-    100% {
-      box-shadow: 0 0 20px rgba(255, 223, 0, 1);
-    }
-  }
-  
+}
