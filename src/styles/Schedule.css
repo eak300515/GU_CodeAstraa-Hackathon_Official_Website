@@ -65,14 +65,15 @@
     position: relative;
 }
 
-/* Each Round Card */
+/* Each Round Card - Wider & More Beautiful */
 .schedule-card {
     position: relative;
-    width: 60%;
+    width: 75%; /* Increased width for a grander look */
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(10px);
-    padding: 20px;
+    backdrop-filter: blur(12px);
+    padding: 25px; /* Slightly more padding */
+    border-radius: 20px; /* More rounded corners */
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 1;
@@ -140,8 +141,8 @@
     content: "";
     position: absolute;
     left: 0px;
-    width: 10px;
-    height: 10px;
+    width: 12px; /* Slightly bigger dot */
+    height: 12px;
     background: radial-gradient(circle, #ffd700, #ffcc00);
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(255, 223, 0, 1);
