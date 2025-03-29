@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { BookOpen, MagicWand, Trophy } from "lucide-react";
+import { BookOpen, Wand, Trophy } from "lucide-react";
 import "./../styles/Schedule.css"; // Import the magical styles
 
 const scheduleData = [
@@ -15,7 +15,7 @@ const scheduleData = [
   },
   {
     title: "Round 2: MVP Development & Presentation",
-    icon: <MagicWand size={24} />,
+    icon: <Wand size={24} />,
     details: [
       "Teams develop a Minimum Viable Product (MVP) and present it.",
       "Evaluation Criteria: Functionality, scalability, and UI/UX.",
