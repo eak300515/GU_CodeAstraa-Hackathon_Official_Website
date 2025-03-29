@@ -25,9 +25,10 @@ function App() {
     <Prizing />
     </div>
 
-
+    <div id="knowus">
     <KnowUs />
-    
+    </div>
+
     <Footer />
    </div>
    </>
