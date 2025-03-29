@@ -27,6 +27,12 @@
 }
 
 /* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between Astraa Logo & Logo2 */
+}
+
 .logo img {
   height: 60px;
   transition: transform 0.3s ease-in-out;
@@ -34,8 +40,20 @@
 }
 
 .logo img:hover {
-  transform: scale(1.1) rotate(10Deg);
+  transform: scale(1.1) rotate(10deg);
   cursor: url("/sparkle-cursor.cur"), pointer;
+}
+
+/* Show Logo2 only on mobile */
+.mobile-logo2 {
+  height: 50px;
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .mobile-logo2 {
+    display: block;
+  }
 }
 
 /* Logo Section */
@@ -51,7 +69,7 @@
 }
 
 .magic-logo:hover {
-  transform: scale(1.1) rotate(5Deg);
+  transform: scale(1.1) rotate(5deg);
   filter: drop-shadow(0 0 10px gold);
   cursor: url("/sparkle-cursor.cur"), pointer;
 }
@@ -81,7 +99,7 @@
   }
 
   .logo-container {
-    display: none; /* Hide logos on mobile by default */
+    display: none; /* Hide desktop logos on mobile */
   }
 }
 

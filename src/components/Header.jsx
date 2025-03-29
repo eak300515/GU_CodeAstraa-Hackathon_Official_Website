@@ -18,15 +18,16 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        {/* Astraa Logo on Left */}
+        {/* Astraa Logo + Logo2 on Mobile */}
         <a href="#hero" className="logo">
-          <img src={AstraaLogo} alt="Code Astraa" />
+          <img src={AstraaLogo} alt="Code Astraa" className="astraa-logo" />
+          <img src={Logo2} alt="Logo 2" className="mobile-logo2" />
         </a>
 
         {/* Logos Section - Hidden on Mobile */}
         <div className="logo-container">
           <img src={Logo1} alt="Logo 1" className="magic-logo" />
-          <img src={Logo2} alt="Logo 2" className="magic-logo" />
+          <img src={Logo2} alt="Logo 2" className="magic-logo desktop-only" />
           <img src={Logo3} alt="Logo 3" className="magic-logo" />
           <img src={Logo4} alt="Logo 4" className="magic-logo" />
           <img src={Logo5} alt="Logo 5" className="magic-logo" />
@@ -44,6 +45,7 @@ const Header = () => {
       {/* Mobile Logo Menu */}
       <div className={`mobile-logo-menu ${openNavigation ? "open" : ""}`}>
         <img src={Logo1} alt="Logo 1" />
+        <img src={Logo2} alt="Logo 2" />
         <img src={Logo3} alt="Logo 3" />
         <img src={Logo4} alt="Logo 4" />
         <img src={Logo5} alt="Logo 5" />
