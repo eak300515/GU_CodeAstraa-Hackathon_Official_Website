@@ -52,10 +52,13 @@ const Home = () => {
       </button>
 
       <motion.button 
-        className="magic-button"
-        whileHover={{ scale: 1.2, boxShadow: "0px 0px 20px gold" }}>
-        Register Now
-      </motion.button>
+  className="magic-button"
+  whileHover={{ scale: 1.2, boxShadow: "0px 0px 20px gold" }}
+  onClick={() => window.open("https://unstop.com/p/codeastraa-iccsai-young-minds-2025-galgotias-university-gu-greater-noida-1446795", "_blank")}
+>
+  Register Now
+</motion.button>
+
     </div>
   );
 };
