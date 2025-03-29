@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { BookOpen, MagicWand, Trophy } from "lucide-react";
-import "./Schedule.css"; // Import the magical styles
+import "./../styles/Schedule.css"; // Import the magical styles
 
 const scheduleData = [
   {
