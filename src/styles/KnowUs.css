@@ -89,7 +89,9 @@
 
 .knowus-benefits h2 {
     color: #ffcc00; /* Also updated here */
-    font-family: "HarryP", sans-serif;
+    font-family: "Henny Penny", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .knowus-benefits ul {
