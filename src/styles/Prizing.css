@@ -1,0 +1,92 @@
+/* Wrapper */
+.prizing-wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Video Background */
+.prizing-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Glassmorphic Container */
+.prizing-container {
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    width: 85%;
+    max-width: 1000px;
+}
+
+/* Section Title */
+.prizing-title {
+    font-size: 3rem;
+    font-family: "HarryP";
+    color: white;
+    text-shadow: 0 0 30px rgba(190, 196, 7, 0.8);
+    margin-bottom: 2rem;
+}
+
+/* Grid for Prizes */
+.prizing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Prize Cards */
+.prize-card {
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Winner, Runner-up & Third Place Colors */
+.prize-card.first { border: 2px solid gold; }
+.prize-card.second { border: 2px solid silver; }
+.prize-card.third { border: 2px solid #cd7f32; }
+.prize-card.special { border: 2px solid #ffcc00; }
+
+.prize-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 40px rgba(255, 223, 0, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .prizing-container {
+        width: 90%;
+    }
+
+    .prizing-title {
+        font-size: 2.5rem;
+    }
+
+    .prizing-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
