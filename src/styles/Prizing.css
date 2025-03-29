@@ -1,110 +1,127 @@
 /* Wrapper */
 .prizing-wrapper {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 /* Video Background */
 .prizing-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 /* Prizing Container */
 .prizing-container {
-    text-align: center;
-    color: white;
-    width: 85%;
-    max-width: 1000px;
+  text-align: center;
+  color: white;
+  width: 85%;
+  max-width: 1000px;
 }
 
 /* Section Title */
 .prizing-title {
-    font-size: 3rem;
-    font-family: "HarryP";
-    color: white;
-    text-shadow: 0 0 30px rgba(190, 196, 7, 0.8);
-    margin-bottom: 2rem;
+  font-size: 3rem;
+  font-family: "HarryP";
+  color: white;
+  text-shadow: 0 0 30px rgba(190, 196, 7, 0.8);
+  margin-bottom: 2rem;
 }
 
 /* Grid for Prizes */
 .prizing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Prize Cards */
 .prize-card {
-    padding: 20px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    text-align: center;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    font-family: "HarryP";
-    position: relative;
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 1s ease forwards;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  color: #ffcc00;
+  font-size: 1.2rem;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
 }
 
 /* Animate cards sequentially */
-.prize-card:nth-child(1) { animation-delay: 0.2s; }
-.prize-card:nth-child(2) { animation-delay: 0.4s; }
-.prize-card:nth-child(3) { animation-delay: 0.6s; }
-.prize-card:nth-child(4) { animation-delay: 0.8s; }
+.prize-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.prize-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.prize-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.prize-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
 
 /* Keyframes for Animation */
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Winner, Runner-up & Third Place Colors */
-.prize-card.first { border: 2px solid gold; }
-.prize-card.second { border: 2px solid silver; }
-.prize-card.third { border: 2px solid #cd7f32; }
-.prize-card.special { border: 2px solid #a600ff; }
+.prize-card.first {
+  border: 2px solid gold;
+}
+.prize-card.second {
+  border: 2px solid silver;
+}
+.prize-card.third {
+  border: 2px solid #cd7f32;
+}
+.prize-card.special {
+  border: 2px solid #a600ff;
+}
 
 /* Hover Effect */
 .prize-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 40px rgba(255, 223, 0, 0.8);
+  transform: scale(1.05);
+  box-shadow: 0 12px 40px rgba(255, 223, 0, 0.8);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-    .prizing-container {
-        width: 90%;
-    }
+  .prizing-container {
+    width: 90%;
+  }
 
-    .prizing-title {
-        font-size: 2.5rem;
-    }
+  .prizing-title {
+    font-size: 2.5rem;
+  }
 
-    .prizing-grid {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
+  .prizing-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }

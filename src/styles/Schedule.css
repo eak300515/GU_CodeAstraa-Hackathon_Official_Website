@@ -1,182 +1,184 @@
 /* Background styling - Same as Events */
 .schedule-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    background-image: url('/hogwarts-background.jpg'); /* Same as Events */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("/hogwarts-background.jpg"); /* Same as Events */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
 /* Blurred Background */
 .schedule-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    filter: blur(10px);
-    z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(10px);
+  z-index: -1;
 }
 
 /* Magical Schedule Container */
 .schedule-container {
-    border-radius: 15px;
-    backdrop-filter: blur(12px);
-    background: rgba(0, 0, 0, 0.4);
-    padding: 2rem;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    width: 85%;
-    max-width: 1200px;
-    min-height: 90vh;
-    text-align: center;
-    color: white;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  width: 85%;
+  max-width: 1200px;
+  min-height: 90vh;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ✨ Title Styling - Same as Events */
 .schedule-title {
-    font-size: 3rem;
-    font-family: "HarryP";
-    src: url("../src/fonts/HarryP-MVZ6w.ttf") format("truetype");
-    font-weight: bold;
-    color: white;
-    text-shadow: 0 0 30px rgba(190, 196, 7, 0.8);
-    margin-bottom: 2rem;
-    text-align: center;
+  font-size: 3rem;
+  font-family: "HarryP";
+  src: url("../src/fonts/HarryP-MVZ6w.ttf") format("truetype");
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 30px rgba(190, 196, 7, 0.8);
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 /* Roadmap Styling */
 .schedule-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  position: relative;
 }
 
 /* Each Round Card - Wider & More Beautiful */
 .schedule-card {
-    position: relative;
-    width: 75%; /* Increased width for a grander look */
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(12px);
-    padding: 25px; /* Slightly more padding */
-    border-radius: 20px; /* More rounded corners */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 1;
+  position: relative;
+  width: 75%; /* Increased width for a grander look */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  padding: 25px; /* Slightly more padding */
+  border-radius: 20px; /* More rounded corners */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
 }
 
 /* Hover Effect */
 .schedule-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 40px rgba(199, 21, 196, 0.6);
-    cursor: url('/sparkle-cursor.cur'), pointer;
+  transform: translateY(-10px);
+  box-shadow: 0 12px 40px rgba(199, 21, 196, 0.6);
+  cursor: url("/sparkle-cursor.cur"), pointer;
 }
 
 /* Round Header */
 .schedule-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
 .icon {
-    color: #ffdb58;
+  color: #ffdb58;
 }
 
 /* Round Titles */
 .schedule-round {
-    font-size: 22px;
-    font-weight: bold;
-    color: #ffcc00;
+  font-size: 22px;
+  font-family: "Pirata One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffcc00;
 }
 
 /* List Details */
 .schedule-details {
-    list-style-type: none;
-    padding: 0;
-    position: relative;
+  list-style-type: none;
+  padding: 0;
+  position: relative;
 }
 
 /* Connecting Lines for Items */
 .schedule-details::before {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(180deg, #ffd700, rgba(255, 215, 0, 0.2));
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffd700, rgba(255, 215, 0, 0.2));
 }
 
 /* Individual Schedule Items */
 .schedule-item {
-    position: relative;
-    color: #ddd;
-    font-size: 16px;
-    transition: color 0.3s;
-    padding-left: 30px; /* Space for the connecting line */
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
+  position: relative;
+  color: #ddd;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding-left: 30px; /* Space for the connecting line */
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
 }
 
 /* Glowing Dot for Each Item */
 .schedule-item::before {
-    content: "";
-    position: absolute;
-    left: 0px;
-    width: 12px; /* Slightly bigger dot */
-    height: 12px;
-    background: radial-gradient(circle, #ffd700, #ffcc00);
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(255, 223, 0, 1);
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 12px; /* Slightly bigger dot */
+  height: 12px;
+  background: radial-gradient(circle, #ffd700, #ffcc00);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 223, 0, 1);
 }
 
 /* Hover Effect */
 .schedule-item:hover {
-    color: #ffd700;
-    cursor: url('/sparkle-cursor.cur'), pointer;
+  color: #ffd700;
+  cursor: url("/sparkle-cursor.cur"), pointer;
 }
 
 /* ✨ Responsive Design */
 @media (max-width: 768px) {
-    .schedule-container {
-        width: 95%;
-        min-height: auto;
-        padding: 20px;
-    }
+  .schedule-container {
+    width: 95%;
+    min-height: auto;
+    padding: 20px;
+  }
 
-    .schedule-title {
-        font-size: 2.5rem;
-    }
+  .schedule-title {
+    font-size: 2.5rem;
+  }
 
-    .schedule-round {
-        font-size: 18px;
-    }
+  .schedule-round {
+    font-size: 18px;
+  }
 
-    .schedule-item {
-        font-size: 14px;
-    }
+  .schedule-item {
+    font-size: 14px;
+  }
 
-    /* Make roadmap cards full width on mobile */
-    .schedule-card {
-        width: 90%;
-        align-self: center;
-    }
+  /* Make roadmap cards full width on mobile */
+  .schedule-card {
+    width: 90%;
+    align-self: center;
+  }
 }
